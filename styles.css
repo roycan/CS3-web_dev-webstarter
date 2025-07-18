@@ -11,7 +11,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0.5rem;
-  font-family: cursive, system-ui, sans-serif;
+  font-family: "Courier New", monospace, cursive, system-ui, sans-serif;
 
 }
 
@@ -49,6 +49,6 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
-  font-family: cursive;
+  font-family: "Courier New", monospace, cursive, system-ui, sans-serif;
 }
 
