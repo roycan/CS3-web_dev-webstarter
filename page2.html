@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Color Examples & CSS Instructions</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      .color-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+      
+      .color-example {
+        padding: 1rem;
+        border: 2px solid #333;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .instructions {
+        background-color: #f0f8ff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 2rem 0;
+        border-left: 4px solid royalblue;
+      }
+      
+      .code-example {
+        background-color: #f5f5f5;
+        padding: 1rem;
+        border-radius: 4px;
+        font-family: monospace;
+        margin: 0.5rem 0;
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="page2.html" aria-current="page">Other page</a>
+      <a href="page3.html">Another page</a>
+    </nav>
+    <main>
+      <h1>CSS Color Examples & Instructions</h1>
+      
+      <h2>Popular Background Colors (30+ Options)</h2>
+      <div class="color-grid">
+        <div class="color-example" style="background-color: lightblue; color: darkblue;">
+          lightblue
+        </div>
+        <div class="color-example" style="background-color: lavender; color: purple;">
+          lavender
+        </div>
+        <div class="color-example" style="background-color: mistyrose; color: darkred;">
+          mistyrose
+        </div>
+        <div class="color-example" style="background-color: honeydew; color: darkgreen;">
+          honeydew
+        </div>
+        <div class="color-example" style="background-color: wheat; color: saddlebrown;">
+          wheat
+        </div>
+        <div class="color-example" style="background-color: lightgray; color: black;">
+          lightgray
+        </div>
+        <div class="color-example" style="background-color: peachpuff; color: darkorange;">
+          peachpuff
+        </div>
+        <div class="color-example" style="background-color: lightcyan; color: teal;">
+          lightcyan
+        </div>
+        <div class="color-example" style="background-color: cornsilk; color: darkgoldenrod;">
+          cornsilk
+        </div>
+        <div class="color-example" style="background-color: aliceblue; color: navy;">
+          aliceblue
+        </div>
+        <div class="color-example" style="background-color: mintcream; color: darkgreen;">
+          mintcream
+        </div>
+        <div class="color-example" style="background-color: seashell; color: darkred;">
+          seashell
+        </div>
+        <div class="color-example" style="background-color: ivory; color: darkslategray;">
+          ivory
+        </div>
+        <div class="color-example" style="background-color: linen; color: maroon;">
+          linen
+        </div>
+        <div class="color-example" style="background-color: oldlace; color: saddlebrown;">
+          oldlace
+        </div>
+        <div class="color-example" style="background-color: papayawhip; color: darkorange;">
+          papayawhip
+        </div>
+        <div class="color-example" style="background-color: beige; color: darkslategray;">
+          beige
+        </div>
+        <div class="color-example" style="background-color: antiquewhite; color: darkred;">
+          antiquewhite
+        </div>
+        <div class="color-example" style="background-color: blanchedalmond; color: saddlebrown;">
+          blanchedalmond
+        </div>
+        <div class="color-example" style="background-color: bisque; color: darkorange;">
+          bisque
+        </div>
+        <div class="color-example" style="background-color: moccasin; color: darkred;">
+          moccasin
+        </div>
+        <div class="color-example" style="background-color: navajowhite; color: saddlebrown;">
+          navajowhite
+        </div>
+        <div class="color-example" style="background-color: lightsteelblue; color: darkblue;">
+          lightsteelblue
+        </div>
+        <div class="color-example" style="background-color: powderblue; color: navy;">
+          powderblue
+        </div>
+        <div class="color-example" style="background-color: lightpink; color: darkred;">
+          lightpink
+        </div>
+        <div class="color-example" style="background-color: thistle; color: purple;">
+          thistle
+        </div>
+        <div class="color-example" style="background-color: plum; color: darkmagenta;">
+          plum
+        </div>
+        <div class="color-example" style="background-color: lightgreen; color: darkgreen;">
+          lightgreen
+        </div>
+        <div class="color-example" style="background-color: palegreen; color: darkgreen;">
+          palegreen
+        </div>
+        <div class="color-example" style="background-color: lightyellow; color: darkgoldenrod;">
+          lightyellow
+        </div>
+        <div class="color-example" style="background-color: lemonchiffon; color: darkorange;">
+          lemonchiffon
+        </div>
+        <div class="color-example" style="background-color: lightcoral; color: darkred;">
+          lightcoral
+        </div>
+        <div class="color-example" style="background-color: lightsalmon; color: darkred;">
+          lightsalmon
+        </div>
+        <div class="color-example" style="background-color: lightgoldenrodyellow; color: darkgoldenrod;">
+          lightgoldenrodyellow
+        </div>
+        <div class="color-example" style="background-color: whitesmoke; color: darkslategray;">
+          whitesmoke
+        </div>
+        <div class="color-example" style="background-color: gainsboro; color: darkslategray;">
+          gainsboro
+        </div>
+      </div>
+
+      <h2>Popular Text Colors (30+ Options)</h2>
+      <div class="color-grid">
+        <div class="color-example" style="background-color: white; color: navy;">
+          navy
+        </div>
+        <div class="color-example" style="background-color: white; color: darkgreen;">
+          darkgreen
+        </div>
+        <div class="color-example" style="background-color: white; color: maroon;">
+          maroon
+        </div>
+        <div class="color-example" style="background-color: white; color: purple;">
+          purple
+        </div>
+        <div class="color-example" style="background-color: white; color: darkorange;">
+          darkorange
+        </div>
+        <div class="color-example" style="background-color: white; color: darkslategray;">
+          darkslategray
+        </div>
+        <div class="color-example" style="background-color: white; color: crimson;">
+          crimson
+        </div>
+        <div class="color-example" style="background-color: white; color: indigo;">
+          indigo
+        </div>
+        <div class="color-example" style="background-color: white; color: royalblue;">
+          royalblue
+        </div>
+        <div class="color-example" style="background-color: white; color: darkblue;">
+          darkblue
+        </div>
+        <div class="color-example" style="background-color: white; color: mediumblue;">
+          mediumblue
+        </div>
+        <div class="color-example" style="background-color: white; color: steelblue;">
+          steelblue
+        </div>
+        <div class="color-example" style="background-color: white; color: teal;">
+          teal
+        </div>
+        <div class="color-example" style="background-color: white; color: darkcyan;">
+          darkcyan
+        </div>
+        <div class="color-example" style="background-color: white; color: darkturquoise;">
+          darkturquoise
+        </div>
+        <div class="color-example" style="background-color: white; color: forestgreen;">
+          forestgreen
+        </div>
+        <div class="color-example" style="background-color: white; color: seagreen;">
+          seagreen
+        </div>
+        <div class="color-example" style="background-color: white; color: olivedrab;">
+          olivedrab
+        </div>
+        <div class="color-example" style="background-color: white; color: darkred;">
+          darkred
+        </div>
+        <div class="color-example" style="background-color: white; color: firebrick;">
+          firebrick
+        </div>
+        <div class="color-example" style="background-color: white; color: darkmagenta;">
+          darkmagenta
+        </div>
+        <div class="color-example" style="background-color: white; color: darkviolet;">
+          darkviolet
+        </div>
+        <div class="color-example" style="background-color: white; color: blueviolet;">
+          blueviolet
+        </div>
+        <div class="color-example" style="background-color: white; color: saddlebrown;">
+          saddlebrown
+        </div>
+        <div class="color-example" style="background-color: white; color: sienna;">
+          sienna
+        </div>
+        <div class="color-example" style="background-color: white; color: chocolate;">
+          chocolate
+        </div>
+        <div class="color-example" style="background-color: white; color: darkgoldenrod;">
+          darkgoldenrod
+        </div>
+        <div class="color-example" style="background-color: white; color: goldenrod;">
+          goldenrod
+        </div>
+        <div class="color-example" style="background-color: white; color: darkolivegreen;">
+          darkolivegreen
+        </div>
+        <div class="color-example" style="background-color: white; color: dimgray;">
+          dimgray
+        </div>
+        <div class="color-example" style="background-color: white; color: gray;">
+          gray
+        </div>
+        <div class="color-example" style="background-color: white; color: slategray;">
+          slategray
+        </div>
+        <div class="color-example" style="background-color: white; color: black;">
+          black
+        </div>
+        <div class="color-example" style="background-color: white; color: midnightblue;">
+          midnightblue
+        </div>
+        <div class="color-example" style="background-color: white; color: darkslateblue;">
+          darkslateblue
+        </div>
+      </div>
+
+      <div class="instructions">
+        <h2>📚 Instructions for High School Students</h2>
+        
+        <h3>How to Change Your Website's Colors</h3>
+        
+        <p><strong>Step 1:</strong> Open your <code>styles.css</code> file in your text editor.</p>
+        
+        <p><strong>Step 2:</strong> Find the <code>body</code> section that looks like this:</p>
+        <div class="code-example">
+body {<br>
+&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;font-family: cursive, system-ui, sans-serif;<br>
+&nbsp;&nbsp;color: royalblue;<br>
+&nbsp;&nbsp;background-color: cornsilk;<br>
+}
+        </div>
+        
+        <p><strong>Step 3:</strong> Replace the color names with your chosen colors:</p>
+        <ul>
+          <li><strong>background-color:</strong> This changes the background of your entire page</li>
+          <li><strong>color:</strong> This changes the text color for most of your content</li>
+        </ul>
+        
+        <h3>Example Changes:</h3>
+        
+        <p>To make your page have a light blue background with dark blue text:</p>
+        <div class="code-example">
+body {<br>
+&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;font-family: cursive, system-ui, sans-serif;<br>
+&nbsp;&nbsp;color: navy;<br>
+&nbsp;&nbsp;background-color: lightblue;<br>
+}
+        </div>
+        
+        <p>To make your page have a lavender background with purple text:</p>
+        <div class="code-example">
+body {<br>
+&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;font-family: cursive, system-ui, sans-serif;<br>
+&nbsp;&nbsp;color: purple;<br>
+&nbsp;&nbsp;background-color: lavender;<br>
+}
+        </div>
+        
+        <h3>💡 Pro Tips:</h3>
+        <ul>
+          <li>Always save your file after making changes</li>
+          <li>Refresh your browser to see the changes</li>
+          <li>Make sure your text color contrasts well with your background color so it's easy to read</li>
+          <li>You can use any of the color names shown above, or search online for "CSS color names" to find more options</li>
+          <li>Light backgrounds work best with dark text colors</li>
+          <li>Dark backgrounds work best with light text colors</li>
+        </ul>
+        
+        <h3>🎨 Color Combination Suggestions:</h3>
+        <ul>
+          <li><strong>Professional:</strong> background: lightgray, text: darkslategray</li>
+          <li><strong>Nature:</strong> background: honeydew, text: darkgreen</li>
+          <li><strong>Warm:</strong> background: peachpuff, text: saddlebrown</li>
+          <li><strong>Cool:</strong> background: lightcyan, text: teal</li>
+          <li><strong>Bold:</strong> background: mistyrose, text: crimson</li>
+          <li><strong>Elegant:</strong> background: lavender, text: darkviolet</li>
+          <li><strong>Ocean:</strong> background: aliceblue, text: navy</li>
+          <li><strong>Sunset:</strong> background: papayawhip, text: darkorange</li>
+          <li><strong>Forest:</strong> background: mintcream, text: forestgreen</li>
+          <li><strong>Classic:</strong> background: ivory, text: darkslategray</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

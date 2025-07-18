@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Font Examples & CSS Instructions</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Oswald:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Raleway:wght@400;700&family=PT+Sans:wght@400;700&family=Ubuntu:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Dancing+Script:wght@400;700&family=Pacifico&family=Lobster&family=Righteous&family=Bangers&family=Creepster&family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+      .font-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+      
+      .font-example {
+        padding: 1rem;
+        border: 2px solid #333;
+        border-radius: 8px;
+        text-align: center;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+      }
+      
+      .font-name {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+        font-family: monospace;
+      }
+      
+      .font-sample {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .font-category {
+        background-color: #e8f4fd;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 2rem 0 1rem 0;
+        border-left: 4px solid #2196F3;
+      }
+      
+      .instructions {
+        background-color: #f0f8ff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 2rem 0;
+        border-left: 4px solid royalblue;
+      }
+      
+      .code-example {
+        background-color: #f5f5f5;
+        padding: 1rem;
+        border-radius: 4px;
+        font-family: monospace;
+        margin: 0.5rem 0;
+        border: 1px solid #ddd;
+        font-size: 0.9rem;
+      }
+      
+      .google-fonts-note {
+        background-color: #fff3cd;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        border-left: 4px solid #ffc107;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="page2.html">Other page</a>
+      <a href="page3.html" aria-current="page">Another page</a>
+    </nav>
+    <main>
+      <h1>CSS Font Examples & Instructions</h1>
+      
+      <div class="font-category">
+        <h2>🔒 Web-Safe Fonts (Always Available)</h2>
+        <p>These fonts work on almost all computers and devices:</p>
+      </div>
+      <div class="font-grid">
+        <div class="font-example">
+          <div class="font-name">Arial</div>
+          <div class="font-sample" style="font-family: Arial, sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Helvetica</div>
+          <div class="font-sample" style="font-family: Helvetica, Arial, sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Times New Roman</div>
+          <div class="font-sample" style="font-family: 'Times New Roman', Times, serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Georgia</div>
+          <div class="font-sample" style="font-family: Georgia, serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Verdana</div>
+          <div class="font-sample" style="font-family: Verdana, Geneva, sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Trebuchet MS</div>
+          <div class="font-sample" style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Courier New</div>
+          <div class="font-sample" style="font-family: 'Courier New', Courier, monospace;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Impact</div>
+          <div class="font-sample" style="font-family: Impact, Charcoal, sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Comic Sans MS</div>
+          <div class="font-sample" style="font-family: 'Comic Sans MS', cursive;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Tahoma</div>
+          <div class="font-sample" style="font-family: Tahoma, Geneva, sans-serif;">Header Text</div>
+        </div>
+      </div>
+
+      <div class="font-category">
+        <h2>🌐 Google Fonts (Modern & Popular)</h2>
+        <p>These beautiful fonts are loaded from Google and work everywhere:</p>
+      </div>
+      <div class="font-grid">
+        <div class="font-example">
+          <div class="font-name">Roboto</div>
+          <div class="font-sample" style="font-family: 'Roboto', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Open Sans</div>
+          <div class="font-sample" style="font-family: 'Open Sans', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Lato</div>
+          <div class="font-sample" style="font-family: 'Lato', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Montserrat</div>
+          <div class="font-sample" style="font-family: 'Montserrat', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Oswald</div>
+          <div class="font-sample" style="font-family: 'Oswald', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Source Sans Pro</div>
+          <div class="font-sample" style="font-family: 'Source Sans Pro', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Raleway</div>
+          <div class="font-sample" style="font-family: 'Raleway', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">PT Sans</div>
+          <div class="font-sample" style="font-family: 'PT Sans', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Ubuntu</div>
+          <div class="font-sample" style="font-family: 'Ubuntu', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Nunito</div>
+          <div class="font-sample" style="font-family: 'Nunito', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Playfair Display</div>
+          <div class="font-sample" style="font-family: 'Playfair Display', serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Merriweather</div>
+          <div class="font-sample" style="font-family: 'Merriweather', serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Dancing Script</div>
+          <div class="font-sample" style="font-family: 'Dancing Script', cursive;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Pacifico</div>
+          <div class="font-sample" style="font-family: 'Pacifico', cursive;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Lobster</div>
+          <div class="font-sample" style="font-family: 'Lobster', cursive;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Righteous</div>
+          <div class="font-sample" style="font-family: 'Righteous', cursive;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Bangers</div>
+          <div class="font-sample" style="font-family: 'Bangers', cursive;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Creepster</div>
+          <div class="font-sample" style="font-family: 'Creepster', cursive;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Orbitron</div>
+          <div class="font-sample" style="font-family: 'Orbitron', sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">Press Start 2P</div>
+          <div class="font-sample" style="font-family: 'Press Start 2P', cursive; font-size: 1.2rem;">Header Text</div>
+        </div>
+      </div>
+
+      <div class="font-category">
+        <h2>📱 Generic Font Families (Safe Backups)</h2>
+        <p>These always work as backup options:</p>
+      </div>
+      <div class="font-grid">
+        <div class="font-example">
+          <div class="font-name">serif</div>
+          <div class="font-sample" style="font-family: serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">sans-serif</div>
+          <div class="font-sample" style="font-family: sans-serif;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">cursive</div>
+          <div class="font-sample" style="font-family: cursive;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">fantasy</div>
+          <div class="font-sample" style="font-family: fantasy;">Header Text</div>
+        </div>
+        <div class="font-example">
+          <div class="font-name">monospace</div>
+          <div class="font-sample" style="font-family: monospace;">Header Text</div>
+        </div>
+      </div>
+
+      <div class="instructions">
+        <h2>📚 Instructions for High School Students</h2>
+        
+        <h3>Method 1: Using Web-Safe Fonts (Easiest)</h3>
+        
+        <p><strong>Step 1:</strong> Open your <code>styles.css</code> file in your text editor.</p>
+        
+        <p><strong>Step 2:</strong> Find the <code>h1</code> section that looks like this:</p>
+        <div class="code-example">
+h1 {<br>
+&nbsp;&nbsp;font-weight: bold;<br>
+&nbsp;&nbsp;font-size: 1.5rem;<br>
+&nbsp;&nbsp;font-family: cursive;<br>
+}
+        </div>
+        
+        <p><strong>Step 3:</strong> Replace <code>cursive</code> with any web-safe font:</p>
+        <div class="code-example">
+h1 {<br>
+&nbsp;&nbsp;font-weight: bold;<br>
+&nbsp;&nbsp;font-size: 1.5rem;<br>
+&nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+}
+        </div>
+        
+        <div class="google-fonts-note">
+          <h3>Method 2: Using Google Fonts (More Options!)</h3>
+          
+          <p><strong>Step 1:</strong> Add this line to the <code>&lt;head&gt;</code> section of your HTML file (before the closing <code>&lt;/head&gt;</code> tag):</p>
+          <div class="code-example">
+&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;
+          </div>
+          
+          <p><strong>Step 2:</strong> Then use the font in your CSS:</p>
+          <div class="code-example">
+h1 {<br>
+&nbsp;&nbsp;font-weight: bold;<br>
+&nbsp;&nbsp;font-size: 1.5rem;<br>
+&nbsp;&nbsp;font-family: 'Roboto', sans-serif;<br>
+}
+          </div>
+          
+          <p><strong>Want different Google Fonts?</strong> Visit <a href="https://fonts.google.com" target="_blank">fonts.google.com</a>, pick a font, and copy the link they provide!</p>
+        </div>
+        
+        <h3>Example Changes:</h3>
+        
+        <p><strong>Professional look with Arial:</strong></p>
+        <div class="code-example">
+h1 { font-family: Arial, sans-serif; }
+        </div>
+        
+        <p><strong>Classic look with Times New Roman:</strong></p>
+        <div class="code-example">
+h1 { font-family: 'Times New Roman', serif; }
+        </div>
+        
+        <p><strong>Modern look with Google Font (Montserrat):</strong></p>
+        <div class="code-example">
+h1 { font-family: 'Montserrat', sans-serif; }
+        </div>
+        
+        <p><strong>Fun look with Google Font (Pacifico):</strong></p>
+        <div class="code-example">
+h1 { font-family: 'Pacifico', cursive; }
+        </div>
+        
+        <h3>💡 Pro Tips:</h3>
+        <ul>
+          <li><strong>Always include backup fonts:</strong> <code>font-family: 'Roboto', Arial, sans-serif;</code></li>
+          <li><strong>Web-safe fonts</strong> work everywhere without extra setup</li>
+          <li><strong>Google Fonts</strong> give you more beautiful options but need the link in your HTML</li>
+          <li><strong>Put font names with spaces in quotes:</strong> <code>'Times New Roman'</code></li>
+          <li><strong>Test on different devices</strong> to make sure fonts look good everywhere</li>
+          <li><strong>Don't use too many different fonts</strong> - 2-3 max for a clean look</li>
+        </ul>
+        
+        <h3>🎨 Font Style Recommendations:</h3>
+        <ul>
+          <li><strong>Professional websites:</strong> Roboto, Open Sans, Lato, Arial</li>
+          <li><strong>Creative projects:</strong> Pacifico, Dancing Script, Lobster</li>
+          <li><strong>Modern & clean:</strong> Montserrat, Oswald, Source Sans Pro</li>
+          <li><strong>Classic & elegant:</strong> Playfair Display, Merriweather, Georgia</li>
+          <li><strong>Bold & strong:</strong> Impact, Oswald, Bangers</li>
+          <li><strong>Fun & playful:</strong> Comic Sans MS, Righteous, Creepster</li>
+          <li><strong>Tech/gaming:</strong> Orbitron, Press Start 2P, Courier New</li>
+        </ul>
+        
+        <h3>🔧 Advanced Tips:</h3>
+        <p><strong>Different fonts for different headers:</strong></p>
+        <div class="code-example">
+h1 { font-family: 'Montserrat', sans-serif; }<br>
+h2 { font-family: 'Open Sans', sans-serif; }<br>
+h3 { font-family: Arial, sans-serif; }
+        </div>
+        
+        <p><strong>Change all text on your page:</strong></p>
+        <div class="code-example">
+body {<br>
+&nbsp;&nbsp;font-family: 'Roboto', Arial, sans-serif;<br>
+}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
